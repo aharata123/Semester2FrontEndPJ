@@ -1,0 +1,297 @@
+.banner {
+	background-color: black;
+	color: white;
+}
+.navi a {
+	color: white;
+	text-decoration: none;
+}
+
+.navi a:hover {
+	color:black;
+}
+
+.navi {
+	
+	text-align: center;
+     margin-top: 10px;
+}
+
+a {
+	font-family: 'Mali', cursive;
+}
+
+@media screen and (min-width: 601px) {
+  .navi {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navi {
+    font-size: 25px;
+  }
+}
+
+.dieuhuong:hover {
+background-color: white;
+}
+
+/* NAVIBAR ===============================================================================  */
+
+.background {
+	position: relative;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mali', cursive;
+}
+
+.content {
+	position: absolute;
+	height: 60%;
+	width: 60%;
+	
+}
+.tieude {
+	color: white;
+	margin-bottom: 5%;
+		margin-top: 5%;
+	font-family: 'Mali', cursive;
+	
+}
+
+.cogihot {
+	font-size: 20px;
+	color: white;
+	padding: 0.5%;
+	font-family: 'Mali', cursive;
+}
+
+ /*If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/*h1 {
+  font-size: 2.0vw;
+}
+
+p {
+  font-size: 1.0vw;
+}*/
+
+/* Why You Need A Website===============================================================================  */
+
+.box {
+	width: 80%;
+	
+	border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #000000;
+-webkit-box-shadow: 0px 4px 5px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 5px 9px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 5px 9px rgba(0,0,0,0.75);
+}
+
+
+
+.col-md-6 .background {
+	margin-bottom: 5%;
+}
+
+.row .test {
+	margin-bottom: 5%;
+}
+
+.test {
+	background-image: url('../image/Header.jpg');
+}
+.why {
+	margin-bottom: 5%;
+}
+
+.info {
+	font-size: 20px;
+}
+/*WELCOME AND BOX AND SLIDE===============================================================================  */
+
+
+.dichvu {
+	background-color: rgb(64, 64, 64);
+	color: white;
+
+}
+
+
+
+.truot {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity: 0.8;
+}
+
+.truot:hover .overlay {
+  bottom: 0;
+  height: 100%;
+
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*Service===============================================================================  */
+
+
+.footer {
+	color: black;
+
+}
+
+
+
+
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: black;
+}
+
+/*Contact===============================================================================  */
+
+.khung {
+  border-style: solid;
+  border-color: red;
+  background-color: #252525;
+  border-radius: 8px 8px 8px 8px;
+-moz-border-radius: 8px 8px 8px 8px;
+-webkit-border-radius: 8px 8px 8px 8px;
+border: 0px solid #030203;
+}
+
+
+
+body {
+    font-family: 'Mali', cursive;
+}
+
+.caihop {
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+
+
+}
+
+.noidung {
+
+  background-color: #252525;
+  border-radius: 7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px 7px 7px 7px;
+border: 0px solid #000000;
+
+
+}
+
+.noidung:hover {
+
+-webkit-box-shadow: 0px 0px 8px 3px rgba(250,250,250,1);
+-moz-box-shadow: 0px 0px 8px 3px rgba(250,250,250,1);
+box-shadow: 0px 0px 8px 3px rgba(250,250,250,1);
+
+}
+
+
+
+
+
+.card {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+
+
+ 
+  /*
+  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+  */
+}
+
+
+.img-container {
+  transition: transform .1s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.2);
+  /*
+  Change the scale value as much as you want to change the amount of zoom on hover.
+  */
+}
+
+.card img {
+  opacity: .8;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+

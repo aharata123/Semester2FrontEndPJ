@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="image/web.ico">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	<title>Hello</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	 <!--Copy code sau vào thẻ head của trang-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1280);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style> .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style001.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+  <script  src="js/index.js"></script>
+
+
+
+
+
+
+</head>
+<body>     
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        <div class="container-fluid">
+        	<div class="row banner">
+        		<div class="col-md-4">
+        			<a href=""><img src="image/logo.png" class="img-responsive"></a>
+        		</div>
+        		<div class="col-md-8 navi">
+        		<div class="col-md-2 dieuhuong">
+        			<a class="center" href="index.html">Home</a>
+        		</div>		
+        		<div class="col-md-2 dieuhuong">
+        			<a href="introduction.html">Intro</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="servicenew.html">Service</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="comingsoon.html">Picture</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="news.html">News</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="contact.html">Contact</a>
+        		</div>	
+        		</div>
+        	</div>
+
+        	<!-- <div class="row background">
+        			<img src="image/Header.jpg" class="img-responsive">
+        			<div class="content">
+        				<div class="tieude"><h1> WHY YOU NEED A WEBSITE ?</h1>
+        				</div>
+        				<div class="cogihot"><p>Website represents for a company</p></div>
+        				<div class="cogihot"><p>Build and improve your brand</p></div>
+        				<div class="cogihot"><p>More attractive</p></div>
+        			</div>
+        	</div> -->
+<div class="row dichvu">
+     <div class="row background">
+      
+        <h1>Our Service</h1>
+    </div>
+<div class="row background">
+    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.5s">
+        <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/nhakhoa.png" class="img-responsive" data-toggle="modal" data-target="#nhakhoa"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+            <center><h3>DESIGN DENTAL WEBSITE</h3></center>
+           
+          
+            </div>
+         <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/nhahang.png" class="img-responsive" data-toggle="modal" data-target="#khachsan"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+            <center><h3>DESIGN HOTEL WEBSITE</h3></center>
+            
+            </div>  
+       <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/dulich.png" class="img-responsive" data-toggle="modal" data-target="#dulich"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+            <center><h3>DESIGN TOURIST WEBSITE</h3></center>
+            
+            </div>
+    </div>
+
+</div>
+
+
+<div class="row background">
+    <div class="col-md-8 wow fadeInRight" data-wow-delay="0.5s">
+        <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/banhang.png" class="img-responsive" data-toggle="modal" data-target="#banhang"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+          <center><h3>DESIGN ONLINE MARKET WEBSITE</h3></center>
+            
+            </div>
+       <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/doanhnghiep.png" class="img-responsive" data-toggle="modal" data-target="#doanhnghiep"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+           <center> <h3>DESIGN ENTERPRISE WEBSITE</h3></center>
+            
+            </div>
+
+
+
+        <div class="col-md-4" style="flex-direction: column; padding:20px ">
+              <div class="pic">
+                <img src="image/batdongsan.png" class="img-responsive" data-toggle="modal" data-target="#batdongsan"> 
+                <div class="content background">More detail</div>
+                </div> 
+
+            <center><h3>DESIGN REAL ESTATE WEBSITE</h3></center>
+           
+            </div>
+    </div>
+
+</div>
+
+            </div>
+
+
+<div class="row background" style="padding: 30px">
+
+    <div class="col-md-8 wow fadeInDown">
+<!-- Container for the image gallery -->
+<div class="caihop">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="image/slide1.jpg"  class="img-responsive">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="image/slide2.jpg" class="img-responsive">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="image/slide3.jpg" class="img-responsive">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="image/slide4.jpg" class="img-responsive">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+        <img src="image/slide5.jpg" class="img-responsive">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+        <img src="image/slide6.jpg" class="img-responsive">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="caihang">
+    <div class="caicot">
+      <img class="demo cursor" src="image/slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Design website">
+    </div>
+    <div class="caicot"> 
+      <img class="demo cursor" src="image/slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Domain">
+    </div>
+    <div class="caicot">
+      <img class="demo cursor" src="image/slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Hosting">
+    </div>
+    <div class="caicot">
+      <img class="demo cursor" src="image/slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="SEO Website">
+    </div>
+    <div class="caicot">
+      <img class="demo cursor" src="image/slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Marketing">
+    </div> 
+    <div class="caicot">
+      <img class="demo cursor" src="image/slide6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Content development">
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<div class="row footer wow pulse" data-wow-iteration="2" data-wow-duration="2500ms">
+	<div class="col-md-2"></div>
+	<div class="col-md-6" style="padding-top: 30px" style="flex-direction: column">
+	<h4>Our company</h4>	
+	<div><img src="image/add_icon.png" width="32" height="32">1062A Phạm Văn Đồng, P. Hiệp Bình Chánh, Quận Thủ Đức</div>
+<div><img src="image/phone_icon.jpg" width="32" height="32"> 028.3726.8262</div>
+<div><img src="image/mail_icon.png" width="32" height="32">contact@sondesign.vn</div>
+<br><br>
+	</div> <!-- div cuac col-md 6 -->
+		<div class="col-md-4" style="padding-top: 30px" style="flex-direction: column;"><h4>Follow us</h4>
+		<div><img src="image/facebook.png" width="30" height="30" style="padding: 2px">Facebook</div>
+		<div><img src="image/youtube.png" width="30" height="30" style="padding: 2px">Youtube</div>
+		<div><img src="image/insta.png" width="30" height="30" style="padding: 2px">Instagram</div>
+	<br><br>
+	</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div> <!-- div cua container -->
+   
+
+<div class="modal fade" id="nhakhoa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN DENTAL WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/nhakhoa.png">
+                  Designing a dental website is a solution to help you access clinic and information clinic services to customers quickly and accurately. Customers can easily find out about the clinic services and book an appointment online or register to consult the status of the patient to the clinic. Below is the functional structure and design direction of the dental website for you consultation clinic.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="khachsan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN HOTEL WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/nhahang.png">
+                 - Friendly interface for all devices such as desktop, laptop, tablet, mobile ... google search engine friendly website, support marketing online marketing.
+
+- Online booking features:
+
++ Quick set with 1 click
+
++ Booking online full customer information, time, number of guests ..
+
+- Book features online:
+
++ Quick booking with 1 click
+
++ Book online room full of customer information, time, number of guests, room type, check in date, check out ...
+
+- Restaurant introduction page, delicious food, hotel services. This page allows you to update content, images, articles and unlimited.
+
+- Features full supply of promotional activities, discounts ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="dulich" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN TOURIST WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/dulich.png">
+                  Designing a dental website is a solution to help you access clinic and information clinic services to customers quickly and accurately. Customers can easily find out about the clinic services and book an appointment online or register to consult the status of the patient to the clinic. Below is the functional structure and design direction of the dental website for you consultation clinic.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="banhang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN MARKET ONLINE WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/banhang.png">
+                  Designing a dental website is a solution to help you access clinic and information clinic services to customers quickly and accurately. Customers can easily find out about the clinic services and book an appointment online or register to consult the status of the patient to the clinic. Below is the functional structure and design direction of the dental website for you consultation clinic.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="doanhnghiep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN DENTAL WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/doanhnghiep.png">
+                  Designing a dental website is a solution to help you access clinic and information clinic services to customers quickly and accurately. Customers can easily find out about the clinic services and book an appointment online or register to consult the status of the patient to the clinic. Below is the functional structure and design direction of the dental website for you consultation clinic.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal fade" id="batdongsan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><center>DESIGN REAL ESTATE WEBSITE</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/batdongsan.png">
+                  Designing a dental website is a solution to help you access clinic and information clinic services to customers quickly and accurately. Customers can easily find out about the clinic services and book an appointment online or register to consult the status of the patient to the clinic. Below is the functional structure and design direction of the dental website for you consultation clinic.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="image/web.ico">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	<title>Hello</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	 <!--Copy code sau vào thẻ head của trang-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1280);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style> .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style001.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+  <script  src="js/index.js"></script>
+
+
+
+
+
+
+</head>
+<body>     
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        <div class="container-fluid">
+        	<div class="row banner">
+        		<div class="col-md-4">
+        			<a href=""><img src="image/logo.png" class="img-responsive"></a>
+        		</div>
+        		<div class="col-md-8 navi">
+        		<div class="col-md-2 dieuhuong">
+        			<a class="center" href="index.html">Home</a>
+        		</div>		
+        		<div class="col-md-2 dieuhuong">
+        			<a href="introduction.html">Intro</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="servicenew.html">Service</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="comingsoon.html">Picture</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="news.html">News</a>
+        		</div>	
+        		<div class="col-md-2 dieuhuong">
+        			<a href="contact.html">Contact</a>
+        		</div>	
+        		</div>
+        	</div>
+
+        	<!-- <div class="row background">
+        			<img src="image/Header.jpg" class="img-responsive">
+        			<div class="content">
+        				<div class="tieude"><h1> WHY YOU NEED A WEBSITE ?</h1>
+        				</div>
+        				<div class="cogihot"><p>Website represents for a company</p></div>
+        				<div class="cogihot"><p>Build and improve your brand</p></div>
+        				<div class="cogihot"><p>More attractive</p></div>
+        			</div>
+        	</div> -->
+<div class="row dichvu">
+<div class="row dichvu background" >
+    <div class="col-md-8">
+        <div class="col-md-6" style="padding: 50px"><center><img src="image/intro.png" class="img-responsive wow fadeInLeft data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;"></center></div>
+        <div class="col-md-6" style="padding: 50px"><p style="font-size: 16px; text-align: justify;" class=" wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">Those who are born in the world carry a mission that we must spend our lives to find and pursue.
+
+At 22 years old, I graduated from college, like many young men, I brought in my heart the aspiration and aspirations of success. To me at that moment my biggest dream is to do my favorite job. I went to real estate, with passion, enthusiasm and especially my youth, I worked on the job with 100% of my own energy to assert myself. I need technology to create bigger numbers, I look to Son, an expert in website design to present his thoughts, I want to have a real estate site of my own, according to the idea of I, and dautunhadat24h.com was born. It was precisely this opportunity that I and Son had the opportunity to work together and co-founded the brand Sondesign.
+
+We are one person who never lacks ideas and one person will write the idea from the code. We are here for you to continue writing your ideas and affirm your value through your personal brand!
+</p>
+</div>
+    </div>
+
+
+</div>
+        	
+<div class="row dichvu background wow fadeInLeft" data-wow-delay="0.5s">
+    <div class="col-md-8">
+        <div class="col-md-6" style="padding: 20px; flex-direction: column;">
+            <img src="image/dollar.png">
+            <h3>COMPETITIVE PRICE</h3>
+            <p>We help small and medium businesses build sales websites, business websites, personal websites, real estate websites, travel websites, furniture websites, hotel restaurant websites ... no investment required much in terms of cost, time.</p>
+        </div>
+        <div class="col-md-6" style="padding: 20px"><img src="image/phone.png">
+            <h3>USER-FRIENDLY</h3>
+            <p>The web interface is compatible with display: Laptop, desktop, tablet and mobile. Help customers look more objectively about the web system as well as display on all devices, to bring the highest quality products.</p></div>
+    </div>
+
+</div>
+<div class="row dichvu background wow fadeInRight" data-wow-delay="0.5s">
+    <div class="col-md-8">
+        <div class="col-md-6" style="padding: 20px; flex-direction: column;">
+            <img src="image/search.png">
+            <h3>WEBSITE SEO STANDARD</h3>
+            <p>Compatible with search engine goolge to do SEO programs, support marketing marketing, product paths, articles ... are optimized google search engine friendly, optimized meta tags help Show the full social networking article.</p>
+        </div>
+        <div class="col-md-6" style="padding: 20px"><img src="image/maintain.png">
+            <h3>MAINTENANCE</h3>
+            <p>Website is guaranteed lifetime. In the course of using the website, if you need to upgrade or develop new functions, we will charge for new development.</p></div>
+    </div>
+
+</div>
+
+
+
+
+<div class="row background dichvu wow fadeInDown">
+	<div class="col-md-8" >
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box1.jpg" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">Design website as required</div>
+  </div>
+			
+			</div>
+		</div>
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box2.jpg" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">Hosting service</div>
+  </div>
+			
+			</div>
+		</div>
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box3.jpg" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">Website Advertising</div>
+  </div>
+			
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="row background dichvu wow fadeInDown">
+	<div class="col-md-8" >
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box4.jpg" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">Content Development Website</div>
+  </div>
+			
+			</div>
+		</div>
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box5.jpg" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">SEO Website</div>
+  </div>
+			
+			</div>
+		</div>
+		<div class="col-md-4" style="padding: 20px">
+			<div class="truot">
+			<img src="image/box5.png" class="img-responsive image">
+			<div class="overlay">
+    <div class="text">Domain</div>
+  </div>
+			
+			</div>
+		</div>
+	</div>
+
+</div>
+            </div>
+<div class="row footer wow pulse" data-wow-iteration="2" data-wow-duration="2500ms">
+	<div class="col-md-2"></div>
+	<div class="col-md-6" style="padding-top: 30px" style="flex-direction: column">
+	<h4>Our company</h4>	
+	<div><img src="image/add_icon.png" width="32" height="32">1062A Phạm Văn Đồng, P. Hiệp Bình Chánh, Quận Thủ Đức</div>
+<div><img src="image/phone_icon.jpg" width="32" height="32"> 028.3726.8262</div>
+<div><img src="image/mail_icon.png" width="32" height="32">contact@sondesign.vn</div>
+<br><br>
+	</div> <!-- div cuac col-md 6 -->
+		<div class="col-md-4" style="padding-top: 30px" style="flex-direction: column;"><h4>Follow us</h4>
+		<div><img src="image/facebook.png" width="30" height="30" style="padding: 2px">Facebook</div>
+		<div><img src="image/youtube.png" width="30" height="30" style="padding: 2px">Youtube</div>
+		<div><img src="image/insta.png" width="30" height="30" style="padding: 2px">Instagram</div>
+	<br><br>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div> <!-- div cua container -->
+   
+</body>
+</html>
